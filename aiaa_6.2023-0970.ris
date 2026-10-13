@@ -1,0 +1,20 @@
+
+TY  - CHAP
+PY  - 2023
+Y1  - 2023/01/16
+Y2  - 2026/09/21
+M1  - 0
+DO  - doi:10.2514/6.2023-0970
+UR  - https://doi.org/10.2514/6.2023-0970
+N1  - doi:10.2514/6.2023-0970
+M3  - doi:10.2514/6.2023-0970
+N2  - View Video Presentation: https://doi.org/10.2514/6.2023-0970.vidThis work presents a multi-fidelity framework for wind-turbine aeroacoustic simulations developed at Dassault Systemes. The framework is based on concurrent semi-analytical aerodynamic/aeroacoustic calculations and scale-resolving Computational Fluid Dynamic (CFD) simulations, the latter performed by considering two-dimensional extruded blade profile calculations and three-dimensional full wind-turbine calculations, respectively. Flow simulations are performed by using the high-fidelity multi-propose CFD software SIMULIA PowerFLOW. The benchmark wind-turbine NM80 configuration is considered initially for the assessment of the methodology, while the focus of current paper is on the prediction of wind-turbine serrated blade trailing-edge noise from 2.5D blade section CFD simulations. A step-by-step engineering approach is applied, leading to the analysis and optimization of serrated trailing-edges at different radial positions. Results between airfoil trailing-edge noise prediction in wind-tunnel quasi two-dimensional conditions and the full three-dimensional rotating turbine are compared, confirming lower level of far-field noise reduction for the latter compared to the former, and thus revealing the importance of the proposed methodology in the framework of digital noise reduction prediction of full-scale serrated wind turbine blades.
+AB  - View Video Presentation: https://doi.org/10.2514/6.2023-0970.vidThis work presents a multi-fidelity framework for wind-turbine aeroacoustic simulations developed at Dassault Systemes. The framework is based on concurrent semi-analytical aerodynamic/aeroacoustic calculations and scale-resolving Computational Fluid Dynamic (CFD) simulations, the latter performed by considering two-dimensional extruded blade profile calculations and three-dimensional full wind-turbine calculations, respectively. Flow simulations are performed by using the high-fidelity multi-propose CFD software SIMULIA PowerFLOW. The benchmark wind-turbine NM80 configuration is considered initially for the assessment of the methodology, while the focus of current paper is on the prediction of wind-turbine serrated blade trailing-edge noise from 2.5D blade section CFD simulations. A step-by-step engineering approach is applied, leading to the analysis and optimization of serrated trailing-edges at different radial positions. Results between airfoil trailing-edge noise prediction in wind-tunnel quasi two-dimensional conditions and the full three-dimensional rotating turbine are compared, confirming lower level of far-field noise reduction for the latter compared to the former, and thus revealing the importance of the proposed methodology in the framework of digital noise reduction prediction of full-scale serrated wind turbine blades.
+AU  - van der Velden, Wouter C.
+AU  - Casalino, Damiano
+AU  - Romani, Gianluca
+TI  - Full-Scale Serrated Wind Turbine Trailing Edge Noise Certification Analysis Based on the Lattice-Boltzmann Method
+T2  - AIAA SCITECH 2023 Forum
+T3  - AIAA SciTech Forum
+PB  - American Institute of Aeronautics and Astronautics
+ER  - 

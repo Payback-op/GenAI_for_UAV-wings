@@ -1,0 +1,57 @@
+{
+  "status": "predicted_match",
+  "conditions": {
+    "description": "Example conditions only; replace with your own targets.",
+    "angle_of_attack_deg": 4.0,
+    "target_cl": 0.6,
+    "cl_tolerance": 0.05,
+    "maximum_cd": 0.03,
+    "minimum_thickness_ratio": 0.08,
+    "maximum_thickness_ratio": 0.18,
+    "reynolds_number": 100000,
+    "candidate_count": 8000,
+    "random_seed": 42
+  },
+  "coefficient_convention": "First four lower, last four upper; cubic Bernstein; C=x^0.5*(1-x); dz=0; closed endpoints",
+  "coefficients": {
+    "CST Coeff 1": -0.08777055993136425,
+    "CST Coeff 2": -0.03715074979228058,
+    "CST Coeff 3": -0.13315841435925102,
+    "CST Coeff 4": 0.031845811954942425,
+    "CST Coeff 5": 0.15087305670975934,
+    "CST Coeff 6": 0.1866999609941329,
+    "CST Coeff 7": 0.13207292019260697,
+    "CST Coeff 8": 0.19790519396255693
+  },
+  "predictions": {
+    "Cl": 0.6030120849609375,
+    "Cd": 0.01991851255297661
+  },
+  "checks": {
+    "cl_within_tolerance": true,
+    "cd_within_limit": true,
+    "thickness_within_limits": true,
+    "nonintersecting_sampled_surfaces": true,
+    "training_feature_bounds": true
+  },
+  "maximum_thickness_ratio": 0.09056328559859586,
+  "maximum_absolute_camber_ratio": 0.017989028436497113,
+  "nearest_training_coefficient_distance": 0.0056259058241175395,
+  "nearest_training_filename": "rg12A AIRFOIL PROFILE12A 9",
+  "candidate_count": 8000,
+  "valid_novel_local_candidates": 7493,
+  "predicted_matching_candidates": 6782,
+  "model_sha256": "73b2ea151775b056f99a0cc38ed96e3e6083b1d2bf7d0df1bb8dcfe5d30553d6",
+  "source_revision": "90dae87066913316bc28547b966951294fb885c8",
+  "output_folder": "C:\\BTP\\results\\generated\\20261007T203200406497Z",
+  "method": "Bounded local CST mutations and interpolation; predictor-guided candidate search, not a learned conditional image generator",
+  "physical_requirements_verified": false,
+  "limitations": [
+    "Provisional simulation-label predictions; weak drag model and conflicting source labels",
+    "Source leading-edge anchors are not encoded in CSV; generated normalized endpoints use y=0",
+    "No CFD or experimental check of this generated shape",
+    "Training proximity is a screening heuristic, not uncertainty or aerodynamic validation",
+    "Thickness is normalized chord ratio, not structural strength",
+    "2D airfoil only; no wing/aircraft load, material, mass or flight guarantee"
+  ]
+}

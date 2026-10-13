@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "saved_2d_files_unchanged": 50,
+  "checks": [
+    "Analytical untwisted tapered/rectangular volume",
+    "Reference area and aspect ratio",
+    "Mirrored sections",
+    "Closed and oriented meshes for sweep/dihedral/different tip sections",
+    "Invalid dimensions rejected",
+    "Binary STL count and millimetre scale",
+    "OBJ metre coordinates and face round trip"
+  ],
+  "scope": "Geometry/software/export checks only; no aerodynamic or structural validation"
+}

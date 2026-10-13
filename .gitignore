@@ -1,0 +1,5 @@
+.venv/
+.python-runtime/
+.uv-cache/
+.pdf-tools/
+__pycache__/

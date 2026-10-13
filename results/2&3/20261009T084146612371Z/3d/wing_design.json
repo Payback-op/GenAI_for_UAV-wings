@@ -1,0 +1,120 @@
+{
+  "version": "3d-geometry-v1",
+  "generator_type": "Parametric symmetric tapered-wing loft; no new 3D ML training",
+  "conditions": {
+    "span_m": 1.8,
+    "root_chord_m": 0.3,
+    "tip_chord_m": 0.15,
+    "leading_edge_sweep_deg": 10.0,
+    "dihedral_deg": 5.0,
+    "root_twist_deg": 0.0,
+    "tip_twist_deg": -2.0,
+    "chord_points": 81,
+    "span_stations": 41,
+    "root_airfoil_design": "C:\\BTP\\results\\2&3\\20261009T084146612371Z\\2d\\design.json",
+    "tip_airfoil_design": "same_as_root"
+  },
+  "dimensions": {
+    "span_m": 1.8,
+    "reference_planform_area_m2": 0.40499999999999997,
+    "reference_aspect_ratio": 8.000000000000002,
+    "taper_ratio": 0.5,
+    "reference_mean_aerodynamic_chord_m": 0.2333333333333333,
+    "area_definition": "Untwisted trapezoidal reference planform; not actual curved skin surface area"
+  },
+  "mesh_checks": {
+    "vertices": 6560,
+    "triangles": 13116,
+    "closed_manifold": true,
+    "consistent_orientation": true,
+    "degenerate_faces": 0,
+    "signed_volume_m3": 0.0070827262031955855,
+    "finite_vertices": true,
+    "minimum_xyz_m": [
+      1.3877787807814457e-17,
+      -0.9,
+      -0.014892585428222136
+    ],
+    "maximum_xyz_m": [
+      0.3086257506772667,
+      0.9,
+      0.08776376654383088
+    ]
+  },
+  "root_section": {
+    "design_file": "C:\\BTP\\results\\2&3\\20261009T084146612371Z\\2d\\design.json",
+    "sha256": "0e519c0ad05f49fa9fe694d00b597d763f4cb334dfad5d541ce8f27f18d608e2",
+    "coefficients": {
+      "CST Coeff 1": -0.12318418668476891,
+      "CST Coeff 2": -0.08537311356394049,
+      "CST Coeff 3": -0.1684659317368948,
+      "CST Coeff 4": -0.23833420382084444,
+      "CST Coeff 5": 0.12881026768675616,
+      "CST Coeff 6": 0.08465620237327265,
+      "CST Coeff 7": 0.1623334647553269,
+      "CST Coeff 8": 0.23949415610617245
+    },
+    "original_section_conditions": {
+      "angle_of_attack_deg": 8.0,
+      "target_cl": 0.6,
+      "cl_tolerance": 0.05,
+      "maximum_cd": 0.03,
+      "minimum_thickness_ratio": 0.08,
+      "maximum_thickness_ratio": 0.18,
+      "reynolds_number": 100000,
+      "candidate_count": 8000,
+      "random_seed": 42
+    },
+    "original_section_predictions": {
+      "Cl": 0.6231417059898376,
+      "Cd": 0.026567760854959488
+    },
+    "meaning": "Original 2D design estimates only; these are not whole-wing or spanwise predictions"
+  },
+  "tip_section": {
+    "design_file": "C:\\BTP\\results\\2&3\\20261009T084146612371Z\\2d\\design.json",
+    "sha256": "0e519c0ad05f49fa9fe694d00b597d763f4cb334dfad5d541ce8f27f18d608e2",
+    "coefficients": {
+      "CST Coeff 1": -0.12318418668476891,
+      "CST Coeff 2": -0.08537311356394049,
+      "CST Coeff 3": -0.1684659317368948,
+      "CST Coeff 4": -0.23833420382084444,
+      "CST Coeff 5": 0.12881026768675616,
+      "CST Coeff 6": 0.08465620237327265,
+      "CST Coeff 7": 0.1623334647553269,
+      "CST Coeff 8": 0.23949415610617245
+    },
+    "original_section_conditions": {
+      "angle_of_attack_deg": 8.0,
+      "target_cl": 0.6,
+      "cl_tolerance": 0.05,
+      "maximum_cd": 0.03,
+      "minimum_thickness_ratio": 0.08,
+      "maximum_thickness_ratio": 0.18,
+      "reynolds_number": 100000,
+      "candidate_count": 8000,
+      "random_seed": 42
+    },
+    "original_section_predictions": {
+      "Cl": 0.6231417059898376,
+      "Cd": 0.026567760854959488
+    },
+    "meaning": "Original 2D design estimates only; these are not whole-wing or spanwise predictions"
+  },
+  "output_folder": "C:\\BTP\\results\\2&3\\20261009T084146612371Z\\3d",
+  "export_units": {
+    "wing_mm.stl": "millimetres; STL does not encode units",
+    "wing_m.obj": "metres by convention",
+    "wing_mesh.npz": "metres"
+  },
+  "physical_requirements_verified": false,
+  "complete_wing_aerodynamic_predictions": null,
+  "limitations": [
+    "No matched 3D aerodynamic or structural training labels",
+    "2D source predictions do not account for span, sweep, twist, dihedral or varying local Reynolds number",
+    "Closed envelope mesh only; no spars, ribs, shell thickness or material definition",
+    "Mesh topology checked, not certified manufacturing or flight feasibility",
+    "Generated source-normalized leading-edge endpoints use y=0",
+    "Existing 2D label conflicts and weak drag prediction remain unresolved"
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "features": [
+    "CST Coeff 1",
+    "CST Coeff 2",
+    "CST Coeff 3",
+    "CST Coeff 4",
+    "CST Coeff 5",
+    "CST Coeff 6",
+    "CST Coeff 7",
+    "CST Coeff 8",
+    "AoA"
+  ],
+  "targets": [
+    "Cl",
+    "Cd"
+  ],
+  "selected_models": {
+    "Cl": "xgboost_depth4",
+    "Cd": "xgboost_depth4"
+  },
+  "training_bounds": {
+    "CST Coeff 1": [
+      -0.42693578,
+      0.0039360193
+    ],
+    "CST Coeff 2": [
+      -0.68267687,
+      0.61930168
+    ],
+    "CST Coeff 3": [
+      -0.48141085,
+      0.47898903
+    ],
+    "CST Coeff 4": [
+      -0.51850181,
+      0.5172217
+    ],
+    "CST Coeff 5": [
+      0.026560374,
+      0.55375739
+    ],
+    "CST Coeff 6": [
+      0.021058353,
+      0.83465701
+    ],
+    "CST Coeff 7": [
+      -0.11880214,
+      0.71626977
+    ],
+    "CST Coeff 8": [
+      -0.1069008,
+      0.73794755
+    ],
+    "AoA": [
+      -4.0,
+      8.0
+    ]
+  },
+  "reynolds_number": 100000,
+  "AoA_units": "degrees",
+  "seed": 42,
+  "drag_transform": "log(Cd) for non-dummy models; predictions inverse-transformed",
+  "selection_rule": "Lowest validation RMSE independently per target; no test tuning or train+validation refit",
+  "raw_sha256": "4d02678f3e3926b471fe6bd6acc2977c0af656253e2cd2714d01ca6072c86bd9",
+  "source_revision": "90dae87066913316bc28547b966951294fb885c8",
+  "split_sha256": "789b557a51ed24e7275695620e5e4fded3cc68afd13a026938108ba22a946fad",
+  "python": "3.13.14",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0"
+  },
+  "training_seconds": {
+    "Cl/mean_baseline": 0.03965390002122149,
+    "Cl/random_forest_leaf2": 4.923717800003942,
+    "Cl/random_forest_leaf4": 4.370502699981444,
+    "Cl/xgboost_depth4": 1.5995509999920614,
+    "Cl/xgboost_depth6": 1.791294900001958,
+    "Cd/mean_baseline": 0.0014918000088073313,
+    "Cd/random_forest_leaf2": 5.235647199966479,
+    "Cd/random_forest_leaf4": 4.583225400012452,
+    "Cd/xgboost_depth4": 1.640151400002651,
+    "Cd/xgboost_depth6": 1.7761444000061601
+  },
+  "limitations": [
+    "2D source-simulation coefficient prediction, not experimental validation",
+    "Fixed Reynolds number 100000",
+    "No material, mass, structural, complete-wing or flight outputs",
+    "Source-native CST; no geometry reconstruction yet",
+    "Near-coefficient grouping is not a complete family holdout",
+    "Feature-bound flags cannot guarantee in-distribution geometry",
+    "Source contains identical inputs with conflicting labels: exploratory baseline only pending investigation"
+  ],
+  "data_quality": {
+    "raw_rows": 33705,
+    "filename_count": 2946,
+    "missing_by_column": {
+      "Filename": 0,
+      "AoA": 0,
+      "CST Coeff 1": 0,
+      "CST Coeff 2": 0,
+      "CST Coeff 3": 0,
+      "CST Coeff 4": 0,
+      "CST Coeff 5": 0,
+      "CST Coeff 6": 0,
+      "CST Coeff 7": 0,
+      "CST Coeff 8": 0,
+      "Cl": 0,
+      "Cd": 0
+    },
+    "nonfinite_or_unparseable_numeric": {
+      "CST Coeff 1": 0,
+      "CST Coeff 2": 0,
+      "CST Coeff 3": 0,
+      "CST Coeff 4": 0,
+      "CST Coeff 5": 0,
+      "CST Coeff 6": 0,
+      "CST Coeff 7": 0,
+      "CST Coeff 8": 0,
+      "AoA": 0,
+      "Cl": 0,
+      "Cd": 0
+    },
+    "invalid_rows": 0,
+    "nonpositive_drag_rows": 0,
+    "column_ranges": {
+      "CST Coeff 1": {
+        "min": -0.47502136,
+        "max": 0.020694789
+      },
+      "CST Coeff 2": {
+        "min": -0.70422726,
+        "max": 0.61930168
+      },
+      "CST Coeff 3": {
+        "min": -0.49656713,
+        "max": 0.47898903
+      },
+      "CST Coeff 4": {
+        "min": -0.51850181,
+        "max": 0.5172217
+      },
+      "CST Coeff 5": {
+        "min": 0.026560374,
+        "max": 0.55375739
+      },
+      "CST Coeff 6": {
+        "min": 0.021058353,
+        "max": 0.83465701
+      },
+      "CST Coeff 7": {
+        "min": -0.11896551,
+        "max": 0.71626977
+      },
+      "CST Coeff 8": {
+        "min": -0.1069008,
+        "max": 0.73794755
+      },
+      "AoA": {
+        "min": -4.0,
+        "max": 8.0
+      },
+      "Cl": {
+        "min": -0.75723018,
+        "max": 1.9066628
+      },
+      "Cd": {
+        "min": 0.0014020980999999,
+        "max": 0.089976165
+      }
+    },
+    "raw_sha256": "4d02678f3e3926b471fe6bd6acc2977c0af656253e2cd2714d01ca6072c86bd9",
+    "reynolds_number": 100000,
+    "exact_duplicate_rows_removed": 0,
+    "unique_coefficient_vectors": 1928,
+    "near_coefficient_pairs": 214,
+    "coefficient_distance_tolerance": 0.0001,
+    "shapes_with_multiple_filename_aliases": 1001,
+    "filenames_with_multiple_vectors": 0,
+    "input_combinations_with_conflicting_labels": 7061,
+    "maximum_conflicting_label_spread": {
+      "Cl": 1.22113439,
+      "Cd": 0.07669335000000001
+    },
+    "label_conflict_policy": "Retain source rows, keep identical inputs in one group, treat baseline as exploratory; no arbitrary averaging or label correction.",
+    "geometry_groups": 1716,
+    "usable_rows": 33705,
+    "grouping_limit": "Coefficient proximity is a conservative proxy, not verified coordinate or airfoil-family equivalence. No shape reconstruction or physical label validation performed.",
+    "splits": {
+      "test": {
+        "rows": 4993,
+        "groups": 258
+      },
+      "train": {
+        "rows": 23633,
+        "groups": 1200
+      },
+      "validation": {
+        "rows": 5079,
+        "groups": 258
+      }
+    }
+  }
+}

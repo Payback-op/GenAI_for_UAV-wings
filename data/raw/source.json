@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils",
+  "revision": "90dae87066913316bc28547b966951294fb885c8",
+  "url": "https://raw.githubusercontent.com/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/90dae87066913316bc28547b966951294fb885c8/Final%20Results/COMPILED%20AIRFOIL%20DATA.csv",
+  "retrieved_utc": "2026-10-07T18:38:20.014422+00:00",
+  "sha256": "4d02678f3e3926b471fe6bd6acc2977c0af656253e2cd2714d01ca6072c86bd9",
+  "bytes": 5258780,
+  "reynolds_number": 100000,
+  "paper": "https://doi.org/10.3390/data9050064"
+}

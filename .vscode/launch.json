@@ -1,0 +1,51 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "BTP 2D: Airfoil image generator",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/models/2d/src/design_app.py",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "BTP 2&3: Combined wing generator",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/combined_app.py",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "BTP 3D: Wing generator",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/wing_app.py",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "BTP: Run saved model example",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/predict.py",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["data/processed/example_inputs.csv", "--output", "results/example_predictions.csv"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "BTP: Train baseline models",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/train.py",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}

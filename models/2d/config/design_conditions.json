@@ -1,0 +1,12 @@
+{
+  "description": "Conditions entered in the local airfoil design app.",
+  "angle_of_attack_deg": 8.0,
+  "target_cl": 0.6,
+  "cl_tolerance": 5.0,
+  "maximum_cd": 10.0,
+  "minimum_thickness_ratio": 0.08,
+  "maximum_thickness_ratio": 0.18,
+  "reynolds_number": 100000,
+  "candidate_count": 8000,
+  "random_seed": 42
+}

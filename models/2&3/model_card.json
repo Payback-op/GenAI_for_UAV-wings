@@ -1,0 +1,17 @@
+{
+  "name": "2&3",
+  "version": "combined-v1",
+  "type": "Integrated predictor-guided airfoil search and parametric 3D geometry generator",
+  "app": "src/combined_app.py",
+  "pipeline": "src/generate_combined.py",
+  "conditions": "config/combined_conditions.json",
+  "reused_predictor": "models/airfoil_baseline.joblib",
+  "new_model_training": false,
+  "shape_relationship": "The newly generated 2D airfoil's exact CST coefficients are used at every span station, with local chord scaling, sweep, twist and dihedral. The 2D top view uses leading/trailing edges from the exported 3D mesh.",
+  "outputs": ["Combined PNG", "Airfoil PNG and normalized coordinates", "Closed 3D wing STL in millimetres", "OBJ and indexed mesh in metres", "Conditions, predictions, shape provenance and geometry checks"],
+  "output_directory": "results/2&3/<UTC timestamp>",
+  "prediction_domain": {"reynolds_number": 100000, "angle_of_attack_deg": [-4, 8], "targets": ["2D section Cl", "2D section Cd"]},
+  "physical_requirements_verified": false,
+  "complete_wing_aerodynamic_predictions": null,
+  "limitations": ["Whole-wing performance is not predicted", "Existing conflicting labels and weak drag prediction remain", "Search results may have no predicted target match", "No structural, material, mass or flight model", "Example dimensions are editable and are not approved project requirements"]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "BTP 3D wing geometry generator",
+  "version": "3d-geometry-v1",
+  "type": "Parametric geometry model, not a newly trained 3D neural model",
+  "implementation": ["src/wing_geometry.py", "src/generate_wing.py", "src/wing_app.py"],
+  "default_conditions": "config/wing_conditions.json",
+  "saved_2d_version": "models/2d",
+  "input_geometry": "Generated 2D source-native CST airfoil design.json files at root and optionally tip",
+  "parameters": ["span", "root chord", "tip chord", "leading-edge sweep", "dihedral", "root twist", "tip twist"],
+  "outputs": ["closed full-wing triangle mesh", "STL in millimetres", "OBJ in metres", "interactive preview", "spanwise geometry table", "design provenance JSON"],
+  "coordinate_frame": "x aft, y span, z up; horizontal projected span; twist about section quarter chord",
+  "whole_wing_aerodynamic_prediction": false,
+  "structural_prediction": false,
+  "material_or_mass_prediction": false,
+  "training": "No 3D training performed: current dataset contains 2D section labels only",
+  "requirements_scope": "Geometric dimensions only; no proof of lift, drag, payload or flight requirements",
+  "units": "Internal and OBJ metres; STL numeric coordinates millimetres (STL does not embed units)"
+}

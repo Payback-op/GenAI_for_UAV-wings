@@ -1,0 +1,145 @@
+<div id="btp-angle-of-attack">
+  <h3>Angle of attack</h3>
+  <div class="viz-row aoa-control-label">
+    <label class="form-label" for="btp-aoa-range">Airfoil tilt relative to the airflow</label>
+    <output id="btp-aoa-value" class="tabular-nums" for="btp-aoa-range">+4°</output>
+  </div>
+  <input class="form-range" id="btp-aoa-range" type="range" min="-4" max="8" step="1" value="4" aria-label="Angle of attack in degrees">
+  <div class="aoa-range-labels text-small tabular-nums"><span>−4°</span><span>0°</span><span>+4°</span><span>+8°</span></div>
+  <div class="aoa-stage">
+    <svg id="btp-aoa-diagram" role="img" aria-labelledby="btp-aoa-title btp-aoa-description">
+      <title id="btp-aoa-title">Airfoil tilted at positive four degrees to a horizontal airflow</title>
+      <desc id="btp-aoa-description">A straight chord connects the leading and trailing edges. The angle between this chord and the fixed airflow direction is the angle of attack.</desc>
+    </svg>
+  </div>
+  <div id="btp-aoa-state" aria-live="polite">Positive angle: the leading edge is raised relative to the trailing edge.</div>
+</div>
+<style>
+  #btp-angle-of-attack { width: 100%; }
+  #btp-angle-of-attack .aoa-control-label { justify-content: space-between; padding-right: 12px; }
+  #btp-angle-of-attack .aoa-range-labels { display: flex; justify-content: space-between; color: var(--muted-foreground); }
+  #btp-angle-of-attack .aoa-stage { width: 100%; }
+  #btp-angle-of-attack #btp-aoa-diagram { display: block; width: 100%; height: 310px; overflow: visible; }
+  #btp-angle-of-attack svg text { fill: var(--foreground); font-size: var(--font-size-base); font-weight: 400; }
+  #btp-angle-of-attack .airfoil { fill: var(--viz-series-1); fill-opacity: 0.1; stroke: var(--foreground); stroke-width: 1.5; }
+  #btp-angle-of-attack .chord { stroke: var(--viz-series-1); stroke-width: 2.5; }
+  #btp-angle-of-attack .airflow { stroke: var(--viz-series-2); stroke-width: 2; }
+  #btp-angle-of-attack .reference { stroke: var(--viz-series-2); stroke-width: 1.5; stroke-dasharray: 5 5; }
+  #btp-angle-of-attack .angle { stroke: var(--viz-series-1); stroke-width: 2; fill: none; }
+  #btp-angle-of-attack .leader { stroke: var(--muted-foreground); stroke-width: 1; fill: none; }
+  #btp-angle-of-attack .endpoint { fill: var(--foreground); }
+  #btp-angle-of-attack .flow-arrow { fill: var(--viz-series-2); }
+  #btp-angle-of-attack .angle-fill { fill: var(--viz-series-1); fill-opacity: 0.15; stroke: none; }
+  #btp-angle-of-attack #btp-aoa-state { min-height: 2.5em; }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('btp-angle-of-attack');
+  const input = root.querySelector('#btp-aoa-range');
+  const value = root.querySelector('#btp-aoa-value');
+  const svg = root.querySelector('#btp-aoa-diagram');
+  const stage = root.querySelector('.aoa-stage');
+  const status = root.querySelector('#btp-aoa-state');
+  const ns = 'http://www.w3.org/2000/svg';
+  let angle = 4;
+  const signed = number => number > 0 ? '+' + number + '°' : number < 0 ? '−' + Math.abs(number) + '°' : '0°';
+  function element(tag, attrs, text) {
+    const el = document.createElementNS(ns, tag);
+    Object.entries(attrs).forEach(([key, val]) => el.setAttribute(key, String(val)));
+    if (text !== undefined) el.textContent = text;
+    svg.appendChild(el);
+    return el;
+  }
+  function line(x1, y1, x2, y2, className, extra = {}) {
+    return element('line', {x1, y1, x2, y2, class: className, ...extra});
+  }
+  function label(x, y, text, anchor = 'start') {
+    return element('text', {x, y, 'text-anchor': anchor}, text);
+  }
+  function draw() {
+    const width = Math.max(280, stage.clientWidth);
+    const height = 310;
+    svg.setAttribute('viewBox', '0 0 ' + width + ' ' + height);
+    svg.replaceChildren();
+    element('title', {id: 'btp-aoa-title'}, 'Airfoil at ' + signed(angle) + ' angle of attack');
+    element('desc', {id: 'btp-aoa-description'}, 'Horizontal arrows show airflow from left to right. The chord is the straight line joining leading and trailing edges. Its angle relative to this airflow is ' + signed(angle) + '.');
+    const chord = width * 0.67;
+    const left = width * 0.16;
+    const baseline = 165;
+    const pivot = left + chord * 0.25;
+    const theta = angle * Math.PI / 180;
+    function point(x, z) {
+      const dx = (x - 0.25) * chord;
+      const dy = -z * chord;
+      return [pivot + dx * Math.cos(theta) - dy * Math.sin(theta), baseline + dx * Math.sin(theta) + dy * Math.cos(theta)];
+    }
+    const leading = point(0, 0);
+    const trailing = point(1, 0);
+    label(14, 31, 'Incoming airflow');
+    for (let index = 0; index < 3; index++) {
+      const start = 15 + index * (width - 30) / 3;
+      const end = start + (width - 30) / 3 - 12;
+      line(start, 57, end - 8, 57, 'airflow');
+      element('path', {d: 'M ' + (end - 9) + ' 52 L ' + end + ' 57 L ' + (end - 9) + ' 62 Z', class: 'flow-arrow'});
+    }
+    line(leading[0] - 20, leading[1], width - 12, leading[1], 'reference');
+    label(width - 14, leading[1] - 34, 'Airflow direction', 'end');
+    line(width - 40, leading[1] - 28, width - 40, leading[1] - 4, 'leader');
+    const contour = [];
+    function thickness(x) {
+      return 5 * 0.12 * (0.2969 * Math.sqrt(x) - 0.126 * x - 0.3516 * x * x + 0.2843 * x * x * x - 0.1036 * x * x * x * x);
+    }
+    for (let index = 0; index <= 80; index++) {
+      const x = (1 - Math.cos(index * Math.PI / 80)) / 2;
+      contour.push(point(x, thickness(x)));
+    }
+    for (let index = 79; index >= 0; index--) {
+      const x = (1 - Math.cos(index * Math.PI / 80)) / 2;
+      contour.push(point(x, -thickness(x)));
+    }
+    element('path', {d: contour.map((p, index) => (index ? 'L ' : 'M ') + p[0].toFixed(3) + ' ' + p[1].toFixed(3)).join(' ') + ' Z', class: 'airfoil'});
+    line(leading[0], leading[1], trailing[0], trailing[1], 'chord', {'data-chord': 'true'});
+    const radius = chord * 0.76;
+    if (angle !== 0) {
+      const arcEnd = [leading[0] + radius * Math.cos(theta), leading[1] + radius * Math.sin(theta)];
+      const arc = 'M ' + (leading[0] + radius) + ' ' + leading[1] + ' A ' + radius + ' ' + radius + ' 0 0 ' + (angle > 0 ? 1 : 0) + ' ' + arcEnd[0] + ' ' + arcEnd[1];
+      element('path', {d: 'M ' + leading[0] + ' ' + leading[1] + ' L ' + (leading[0] + radius) + ' ' + leading[1] + ' A ' + radius + ' ' + radius + ' 0 0 ' + (angle > 0 ? 1 : 0) + ' ' + arcEnd[0] + ' ' + arcEnd[1] + ' Z', class: 'angle-fill'});
+      element('path', {d: arc, class: 'angle'});
+    }
+    const chordMiddle = point(0.50, 0);
+    label(width * 0.52, 108, 'Chord line', 'middle');
+    element('path', {d: 'M ' + (width * 0.52) + ' 115 L ' + chordMiddle[0] + ' ' + (chordMiddle[1] - 6), class: 'leader'});
+    element('circle', {cx: leading[0], cy: leading[1], r: 3, class: 'endpoint'});
+    element('circle', {cx: trailing[0], cy: trailing[1], r: 3, class: 'endpoint'});
+    label(14, 244, 'Leading edge');
+    label(width - 14, 244, 'Trailing edge', 'end');
+    element('path', {d: 'M 50 229 L ' + leading[0] + ' ' + (leading[1] + 7), class: 'leader'});
+    element('path', {d: 'M ' + (width - 50) + ' 229 L ' + trailing[0] + ' ' + (trailing[1] + 7), class: 'leader'});
+    label(width / 2, 286, 'α = ' + signed(angle), 'middle');
+    value.value = signed(angle);
+    value.textContent = signed(angle);
+    input.setAttribute('aria-valuetext', signed(angle));
+    status.textContent = angle > 0 ? 'Positive angle: the leading edge is raised relative to the trailing edge.' : angle < 0 ? 'Negative angle: the leading edge is lowered relative to the trailing edge.' : 'Zero angle: the chord is parallel to the airflow.';
+  }
+  function restore(snapshot) {
+    const candidate = snapshot?.modelContent?.angleOfAttackDegrees;
+    angle = Number.isInteger(candidate) && candidate >= -4 && candidate <= 8 ? candidate : 4;
+    input.value = String(angle);
+    draw();
+  }
+  input.addEventListener('input', () => {
+    angle = Number(input.value);
+    draw();
+  });
+  input.addEventListener('change', () => {
+    if (window.openai?.setWidgetState) {
+      window.openai.setWidgetState({modelContent: {angleOfAttackDegrees: angle}, privateContent: null}).catch(() => {});
+    }
+  });
+  window.addEventListener('openai:set_globals', event => {
+    if (event.detail?.globals?.widgetState !== undefined) restore(event.detail.globals.widgetState);
+  });
+  new ResizeObserver(draw).observe(stage);
+  restore(window.openai?.widgetState);
+})();
+</script>

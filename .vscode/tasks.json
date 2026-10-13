@@ -1,0 +1,78 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "BTP 2&3: Open combined generator",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["src/combined_app.py"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "BTP 2&3: Generate both from conditions file",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["src/generate_combined.py", "--conditions", "config/combined_conditions.json"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "BTP 3D: Open wing generator",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["src/wing_app.py"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "BTP 3D: Generate wing from conditions file",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["src/generate_wing.py", "--conditions", "config/wing_conditions.json"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "BTP 2D: Open airfoil image generator",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["models/2d/src/design_app.py"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "group": {"kind": "build", "isDefault": true},
+      "problemMatcher": []
+    },
+    {
+      "label": "BTP 2D: Generate airfoil from conditions file",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["models/2d/src/generate_airfoil.py", "--conditions", "models/2d/config/design_conditions.json"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "BTP: Run saved model example",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["src/predict.py", "data/processed/example_inputs.csv", "--output", "results/example_predictions.csv"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "BTP: Train baseline models",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["src/train.py"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    },
+    {
+      "label": "BTP: Audit and prepare dataset",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "args": ["src/prepare_data.py"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    }
+  ]
+}

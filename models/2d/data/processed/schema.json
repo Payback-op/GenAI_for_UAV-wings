@@ -1,0 +1,23 @@
+{
+  "features": [
+    "CST Coeff 1",
+    "CST Coeff 2",
+    "CST Coeff 3",
+    "CST Coeff 4",
+    "CST Coeff 5",
+    "CST Coeff 6",
+    "CST Coeff 7",
+    "CST Coeff 8",
+    "AoA"
+  ],
+  "targets": [
+    "Cl",
+    "Cd"
+  ],
+  "AoA_units": "degrees",
+  "coefficient_units": "dimensionless",
+  "CST_convention": "Source-native; reconstruction not yet verified",
+  "reynolds_number": 100000,
+  "seed": 42,
+  "group_tolerance": 0.0001
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "Exported surfaces nonintersecting and closed",
+    "Thickness equals exported coordinates",
+    "Saved model independently reproduces candidate predictions",
+    "Match status agrees with targets",
+    "Candidate differs from training coefficients",
+    "Unsupported conditions rejected",
+    "Impossible target returns no-match"
+  ],
+  "matched_design_folder": "C:\\BTP\\results\\generated\\20261007T203200406497Z",
+  "no_match_design_folder": "C:\\BTP\\results\\generated\\20261007T203404201371Z"
+}

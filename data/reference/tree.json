@@ -1,0 +1,574 @@
+{
+  "sha": "90dae87066913316bc28547b966951294fb885c8",
+  "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/90dae87066913316bc28547b966951294fb885c8",
+  "tree": [
+    {
+      "path": "Baseline Model",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "909290226f86899272849f975c9134b3bcefdfcf",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/909290226f86899272849f975c9134b3bcefdfcf"
+    },
+    {
+      "path": "Baseline Model/COMPILED_AIRFOIL_DATA.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e117a4411029e7c3c06e3b78212a9b5989ad757c",
+      "size": 5258780,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/e117a4411029e7c3c06e3b78212a9b5989ad757c"
+    },
+    {
+      "path": "Baseline Model/DATALOADER.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03c22fc12e35df6e0b081db1a6cb23402e5e3403",
+      "size": 1608,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/03c22fc12e35df6e0b081db1a6cb23402e5e3403"
+    },
+    {
+      "path": "Baseline Model/MODEL.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77ad4af3f652516c246f53e17213bd6e47a5cc97",
+      "size": 687,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/77ad4af3f652516c246f53e17213bd6e47a5cc97"
+    },
+    {
+      "path": "Baseline Model/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "473bb2f26a0bf4962db159b323061e993a08db0b",
+      "size": 376,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/473bb2f26a0bf4962db159b323061e993a08db0b"
+    },
+    {
+      "path": "Baseline Model/TRAIN.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d582e31faefd4cba677d736c1910e357fd5dc251",
+      "size": 3054,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/d582e31faefd4cba677d736c1910e357fd5dc251"
+    },
+    {
+      "path": "CFD",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e61a04d75c559bf96b23023a213e18e76aa87793",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/e61a04d75c559bf96b23023a213e18e76aa87793"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0eaa55d115213811364eb931c7c4ad7a393e6845",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/0eaa55d115213811364eb931c7c4ad7a393e6845"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7e244812db959181a9b2160c84d3e51332d1ba6",
+      "size": 158,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/a7e244812db959181a9b2160c84d3e51332d1ba6"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "75247504be792d4ba5ba617873cab9d6ea176365",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/75247504be792d4ba5ba617873cab9d6ea176365"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "58d24e798d2ffbfe71c6ac3d7e0f475a18ff5de5",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/58d24e798d2ffbfe71c6ac3d7e0f475a18ff5de5"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/U",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "2ce026f6b485624649d9779d88d8cbbe6e9f9097",
+      "size": 1103,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/2ce026f6b485624649d9779d88d8cbbe6e9f9097"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/aspectRatio",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "65582d1a43c459605fe6ec1b270b9a79b608f422",
+      "size": 549332,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/65582d1a43c459605fe6ec1b270b9a79b608f422"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/cellDeterminant",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "6c7e002a61727e9cd1bfbfcb082ea420df4ec917",
+      "size": 655933,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/6c7e002a61727e9cd1bfbfcb082ea420df4ec917"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/cellRegion",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3924b84e605f432ac74817d69df6cf6925758c38",
+      "size": 1193,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/3924b84e605f432ac74817d69df6cf6925758c38"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/cellShapes",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "338ffaf368570ced0034233f3a20b58dd0e3b606",
+      "size": 1127,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/338ffaf368570ced0034233f3a20b58dd0e3b606"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/cellVolume",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9dd0f239cf4f6b73a1c0eaede7d8166dfb1bd354",
+      "size": 782673,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/9dd0f239cf4f6b73a1c0eaede7d8166dfb1bd354"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/cellVolumeRatio",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9ddfe9c9c6560bbf3c70c1946d0705febc81a0ab",
+      "size": 618996,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/9ddfe9c9c6560bbf3c70c1946d0705febc81a0ab"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/faceWeight",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "52ba82ce68cc3478bcbd9fe5a37233d3eb2ec051",
+      "size": 620398,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/52ba82ce68cc3478bcbd9fe5a37233d3eb2ec051"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/minTetVolume",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "08de54e0ca2ce689e89f24d5a5943537047d43d2",
+      "size": 824480,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/08de54e0ca2ce689e89f24d5a5943537047d43d2"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/nonOrthoAngle",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "0eba534e643d7c1b72221a77a0ea632ce7bb8feb",
+      "size": 555573,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/0eba534e643d7c1b72221a77a0ea632ce7bb8feb"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/nuTilda",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "fc7a83a4bf2c22bfd6765650e24ed8a5e9fe9350",
+      "size": 1068,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/fc7a83a4bf2c22bfd6765650e24ed8a5e9fe9350"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/nut",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "3faea396a380741e7e633140f72ce71e2758423d",
+      "size": 1082,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/3faea396a380741e7e633140f72ce71e2758423d"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/p",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "7ded5f40f41e1957a4c225a789101db39324b4fe",
+      "size": 1021,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/7ded5f40f41e1957a4c225a789101db39324b4fe"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/0.orig/skewness",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "afeddb4bf012c1dee9d4acc8219c0319166551f3",
+      "size": 797391,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/afeddb4bf012c1dee9d4acc8219c0319166551f3"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/AllRun.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "365bbded07379c753d04aaaa61c346df73c89bf9",
+      "size": 1467,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/365bbded07379c753d04aaaa61c346df73c89bf9"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/DAT_FILES_COEFFS",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9ff8a038da5ddac7b993f6e93c8a7678a9be9761",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/9ff8a038da5ddac7b993f6e93c8a7678a9be9761"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/DAT_FILES_COEFFS/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1dcfdb9a7c5f957f7baf870385b484f1c2ef6d3",
+      "size": 98,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/f1dcfdb9a7c5f957f7baf870385b484f1c2ef6d3"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64ca3bf4eacae3c6f5c2736f88b20a358107a529",
+      "size": 266,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/64ca3bf4eacae3c6f5c2736f88b20a358107a529"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/automesh.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4ef507ec224c9a77b926dbeac07e8cd4e0fb51f5",
+      "size": 6061,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/4ef507ec224c9a77b926dbeac07e8cd4e0fb51f5"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/constant",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f827d81ebc8017115aa5e7823f0006470db86f8",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/5f827d81ebc8017115aa5e7823f0006470db86f8"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/constant/transportProperties",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "39384178e9416b54e880e19eaad764db71736a96",
+      "size": 815,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/39384178e9416b54e880e19eaad764db71736a96"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/constant/turbulenceProperties",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "baf1e7d9ef86822bc694be090d49b4779310ec01",
+      "size": 820,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/baf1e7d9ef86822bc694be090d49b4779310ec01"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/output.py",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a4f6af33acf6cf07d87eb4b3d5d2535dbf22c628",
+      "size": 1185,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/a4f6af33acf6cf07d87eb4b3d5d2535dbf22c628"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/system",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4633e2b6fef3d7cc57e782e09275f93032de36fd",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/4633e2b6fef3d7cc57e782e09275f93032de36fd"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/system/blockMeshDict",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a42f7da0b259d12b72d2bbb5cf68fcf4619e2fa7",
+      "size": 50397,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/a42f7da0b259d12b72d2bbb5cf68fcf4619e2fa7"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/system/controlDict",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "5126312286dee6356527fb9e04131946b26b2a0b",
+      "size": 2444,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/5126312286dee6356527fb9e04131946b26b2a0b"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/system/fvSchemes",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4bbe959f0c2396ee452c6efb7498760bafcf63c5",
+      "size": 1205,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/4bbe959f0c2396ee452c6efb7498760bafcf63c5"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/pcN/system/fvSolution",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "65103f1d4788827dcfac0e78d2eaee7c3e931a1b",
+      "size": 1544,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/65103f1d4788827dcfac0e78d2eaee7c3e931a1b"
+    },
+    {
+      "path": "CFD/Parallelization & Case Setup/runpc.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "9ff8c47b570dc160e20e83db77530061abf1fae1",
+      "size": 211,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/9ff8c47b570dc160e20e83db77530061abf1fae1"
+    },
+    {
+      "path": "CFD/Post-Processing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b66aae40499f24868a3a259d5398c05e41dc9d33",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/b66aae40499f24868a3a259d5398c05e41dc9d33"
+    },
+    {
+      "path": "CFD/Post-Processing/Readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f845b8e92d25841d55bccaa0f0267fe569c7d37",
+      "size": 197,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/9f845b8e92d25841d55bccaa0f0267fe569c7d37"
+    },
+    {
+      "path": "CFD/Post-Processing/post.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da8000ddf4b61bc398c28650c5b708f3bde49942",
+      "size": 1388,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/da8000ddf4b61bc398c28650c5b708f3bde49942"
+    },
+    {
+      "path": "CFD/Post-Processing/postdata.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b88155dce16f437c6fdae8608633e263ddca6581",
+      "size": 1730,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/b88155dce16f437c6fdae8608633e263ddca6581"
+    },
+    {
+      "path": "CFD/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e358daf72c2de9d655d0b2f9ada260557558491a",
+      "size": 11,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/e358daf72c2de9d655d0b2f9ada260557558491a"
+    },
+    {
+      "path": "CST",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2385e8ddd4f7366cfabc939c7a4b6ce51c742513",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/2385e8ddd4f7366cfabc939c7a4b6ce51c742513"
+    },
+    {
+      "path": "CST/AIRFOILS",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "56c3a99d9a0cdcfce77eae26ddba7af4f6534b11",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/56c3a99d9a0cdcfce77eae26ddba7af4f6534b11"
+    },
+    {
+      "path": "CST/AIRFOILS/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "353010e10f8a88a526b3584c020d0db18a16aa77",
+      "size": 65,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/353010e10f8a88a526b3584c020d0db18a16aa77"
+    },
+    {
+      "path": "CST/CST.m",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "bb4402e3192fd4b503eedd5e9401b4f5292e2e7e",
+      "size": 3019,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/bb4402e3192fd4b503eedd5e9401b4f5292e2e7e"
+    },
+    {
+      "path": "CST/CST_airfoil_fit.m",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "ff949133c263e07f99dc1ed97ef9a61d0c0eea9b",
+      "size": 2120,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/ff949133c263e07f99dc1ed97ef9a61d0c0eea9b"
+    },
+    {
+      "path": "CST/CST_auto.m",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "42487061667d0e0f35d18502e82435c3c61b37c5",
+      "size": 842,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/42487061667d0e0f35d18502e82435c3c61b37c5"
+    },
+    {
+      "path": "CST/PLOTS",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6b336a9cf5b925c753d8075e700d89e74f689781",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/6b336a9cf5b925c753d8075e700d89e74f689781"
+    },
+    {
+      "path": "CST/PLOTS/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b97bc0c9065d2089f4edcf331648655c4f323f06",
+      "size": 84,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/b97bc0c9065d2089f4edcf331648655c4f323f06"
+    },
+    {
+      "path": "CST/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "306812fd9e4a1cde2601e54d6d2deef016f204c7",
+      "size": 1123,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/306812fd9e4a1cde2601e54d6d2deef016f204c7"
+    },
+    {
+      "path": "CST/airfoilfit.m",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "035fa0642f811eb5a1c7645ef76adbf9c0485dae",
+      "size": 692,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/035fa0642f811eb5a1c7645ef76adbf9c0485dae"
+    },
+    {
+      "path": "Final Results",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5263a03fddff1df6badf83bee224b2dea3088bcb",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/5263a03fddff1df6badf83bee224b2dea3088bcb"
+    },
+    {
+      "path": "Final Results/COMPILED AIRFOIL DATA.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e117a4411029e7c3c06e3b78212a9b5989ad757c",
+      "size": 5258780,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/e117a4411029e7c3c06e3b78212a9b5989ad757c"
+    },
+    {
+      "path": "Final Results/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f0e7f81176209dbbf392f623e911bec8e80db1e",
+      "size": 470,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/0f0e7f81176209dbbf392f623e911bec8e80db1e"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c2be96ec9d57015dab065947228e14ee6452c65",
+      "size": 1135,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/2c2be96ec9d57015dab065947228e14ee6452c65"
+    },
+    {
+      "path": "Processed Airfoil Data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3876dc7d5d5f90b528425f9bb51a7cd44f9fc7e1",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/3876dc7d5d5f90b528425f9bb51a7cd44f9fc7e1"
+    },
+    {
+      "path": "Processed Airfoil Data/AIRFOILS.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cc8000e7d36516e9a15004300e7f0d7184ff23d",
+      "size": 18344106,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/5cc8000e7d36516e9a15004300e7f0d7184ff23d"
+    },
+    {
+      "path": "Processed Airfoil Data/PLOTS.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b774c5dacaa7a9585914e5fec02ae19f8bf2e0ff",
+      "size": 47085910,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/b774c5dacaa7a9585914e5fec02ae19f8bf2e0ff"
+    },
+    {
+      "path": "Processed Airfoil Data/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1be8146aeefa58c4ea49d04b0defb44f7ed773bf",
+      "size": 376,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/1be8146aeefa58c4ea49d04b0defb44f7ed773bf"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5a838ed22832d583dfc105cf04c8988a0c7ea1a",
+      "size": 383,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/e5a838ed22832d583dfc105cf04c8988a0c7ea1a"
+    },
+    {
+      "path": "Raw Airfoil Data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8ffe298f4942603cad7aae4ccd035e5828e54a00",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/8ffe298f4942603cad7aae4ccd035e5828e54a00"
+    },
+    {
+      "path": "Raw Airfoil Data/AIRFOILTOOLS",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4614dfed9c808a7383485c82352f651357c5ff33",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/4614dfed9c808a7383485c82352f651357c5ff33"
+    },
+    {
+      "path": "Raw Airfoil Data/AIRFOILTOOLS/AIRFOILTOOLS.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c86a265b7dcd6bb4f9a32add8745355f2b9ce306",
+      "size": 1023494,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/c86a265b7dcd6bb4f9a32add8745355f2b9ce306"
+    },
+    {
+      "path": "Raw Airfoil Data/AIRFOILTOOLS/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a11913cb7d894beb6159872b3a33238c9ad974c",
+      "size": 134,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/9a11913cb7d894beb6159872b3a33238c9ad974c"
+    },
+    {
+      "path": "Raw Airfoil Data/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0eb2d2118df69ee07369ac4e0fc7d6f8d0bfdf0b",
+      "size": 477,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/0eb2d2118df69ee07369ac4e0fc7d6f8d0bfdf0b"
+    },
+    {
+      "path": "Raw Airfoil Data/UIUC",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de96c3a0a02d67d288dc20e1565cdb714a492acd",
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/trees/de96c3a0a02d67d288dc20e1565cdb714a492acd"
+    },
+    {
+      "path": "Raw Airfoil Data/UIUC/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f76d50de05b4dc32ef549de9708413f27d663e18",
+      "size": 130,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/f76d50de05b4dc32ef549de9708413f27d663e18"
+    },
+    {
+      "path": "Raw Airfoil Data/UIUC/UIUC.zip",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36b03978f48430638097b39324630193a959bf2f",
+      "size": 1066821,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/36b03978f48430638097b39324630193a959bf2f"
+    },
+    {
+      "path": "Raw Airfoil Data/UIUC/scraper.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe7ebfa67e5ebd2559dbd3a1847ea7f74b747ebe",
+      "size": 1662,
+      "url": "https://api.github.com/repos/kanakaero/Dataset-of-Aerodynamic-and-Geometric-Coefficients-of-Airfoils/git/blobs/fe7ebfa67e5ebd2559dbd3a1847ea7f74b747ebe"
+    }
+  ],
+  "truncated": false
+}

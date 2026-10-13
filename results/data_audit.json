@@ -1,0 +1,110 @@
+{
+  "raw_rows": 33705,
+  "filename_count": 2946,
+  "missing_by_column": {
+    "Filename": 0,
+    "AoA": 0,
+    "CST Coeff 1": 0,
+    "CST Coeff 2": 0,
+    "CST Coeff 3": 0,
+    "CST Coeff 4": 0,
+    "CST Coeff 5": 0,
+    "CST Coeff 6": 0,
+    "CST Coeff 7": 0,
+    "CST Coeff 8": 0,
+    "Cl": 0,
+    "Cd": 0
+  },
+  "nonfinite_or_unparseable_numeric": {
+    "CST Coeff 1": 0,
+    "CST Coeff 2": 0,
+    "CST Coeff 3": 0,
+    "CST Coeff 4": 0,
+    "CST Coeff 5": 0,
+    "CST Coeff 6": 0,
+    "CST Coeff 7": 0,
+    "CST Coeff 8": 0,
+    "AoA": 0,
+    "Cl": 0,
+    "Cd": 0
+  },
+  "invalid_rows": 0,
+  "nonpositive_drag_rows": 0,
+  "column_ranges": {
+    "CST Coeff 1": {
+      "min": -0.47502136,
+      "max": 0.020694789
+    },
+    "CST Coeff 2": {
+      "min": -0.70422726,
+      "max": 0.61930168
+    },
+    "CST Coeff 3": {
+      "min": -0.49656713,
+      "max": 0.47898903
+    },
+    "CST Coeff 4": {
+      "min": -0.51850181,
+      "max": 0.5172217
+    },
+    "CST Coeff 5": {
+      "min": 0.026560374,
+      "max": 0.55375739
+    },
+    "CST Coeff 6": {
+      "min": 0.021058353,
+      "max": 0.83465701
+    },
+    "CST Coeff 7": {
+      "min": -0.11896551,
+      "max": 0.71626977
+    },
+    "CST Coeff 8": {
+      "min": -0.1069008,
+      "max": 0.73794755
+    },
+    "AoA": {
+      "min": -4.0,
+      "max": 8.0
+    },
+    "Cl": {
+      "min": -0.75723018,
+      "max": 1.9066628
+    },
+    "Cd": {
+      "min": 0.0014020980999999,
+      "max": 0.089976165
+    }
+  },
+  "raw_sha256": "4d02678f3e3926b471fe6bd6acc2977c0af656253e2cd2714d01ca6072c86bd9",
+  "reynolds_number": 100000,
+  "exact_duplicate_rows_removed": 0,
+  "unique_coefficient_vectors": 1928,
+  "near_coefficient_pairs": 214,
+  "coefficient_distance_tolerance": 0.0001,
+  "shapes_with_multiple_filename_aliases": 1001,
+  "filenames_with_multiple_vectors": 0,
+  "input_combinations_with_conflicting_labels": 7061,
+  "maximum_conflicting_label_spread": {
+    "Cl": 1.22113439,
+    "Cd": 0.07669335000000001
+  },
+  "label_conflict_policy": "Retain source rows, keep identical inputs in one group, treat baseline as exploratory; no arbitrary averaging or label correction.",
+  "geometry_groups": 1716,
+  "usable_rows": 33705,
+  "grouping_limit": "Coefficient proximity is a conservative proxy, not verified coordinate or airfoil-family equivalence. No shape reconstruction or physical label validation performed.",
+  "splits": {
+    "test": {
+      "rows": 4993,
+      "groups": 258
+    },
+    "train": {
+      "rows": 23633,
+      "groups": 1200
+    },
+    "validation": {
+      "rows": 5079,
+      "groups": 258
+    }
+  }
+}

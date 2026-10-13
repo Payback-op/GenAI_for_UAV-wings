@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "name": "2&3",
+  "runs": [
+    {
+      "folder": "C:\\BTP\\results\\2&3\\20261008T132659786097Z",
+      "status": "predicted_match",
+      "matching_span_stations": 41
+    },
+    {
+      "folder": "C:\\BTP\\results\\2&3\\20261008T133534655152Z",
+      "status": "no_predicted_match",
+      "matching_span_stations": 7
+    }
+  ],
+  "saved_2d_files_unchanged": 50,
+  "checks": [
+    "Exact newly generated section source at both wing ends",
+    "Independent source polynomial evaluation of 2D coordinates",
+    "Every span station recovered to the same normalized 2D shape after inverse twist/scaling",
+    "Input span/root/tip dimensions",
+    "2D top-view edges agree with actual 3D mesh",
+    "Independent saved-model predictions and match/no-match status",
+    "Closed oriented mesh",
+    "STL millimetre and OBJ metre export round trips",
+    "Invalid inputs and stale external design references rejected",
+    "Original standalone configs/latest results/predictor and 2D snapshot unchanged"
+  ],
+  "scope": "Software and geometry integration checks; no physical performance validation"
+}

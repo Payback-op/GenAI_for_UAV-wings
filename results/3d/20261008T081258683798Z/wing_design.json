@@ -1,0 +1,123 @@
+{
+  "version": "3d-geometry-v1",
+  "generator_type": "Parametric symmetric tapered-wing loft; no new 3D ML training",
+  "conditions": {
+    "description": "Editable example wing dimensions, not an approved UAV specification.",
+    "span_m": 1.8,
+    "root_chord_m": 0.3,
+    "tip_chord_m": 0.15,
+    "leading_edge_sweep_deg": 10.0,
+    "dihedral_deg": 5.0,
+    "root_twist_deg": 0.0,
+    "tip_twist_deg": -2.0,
+    "root_airfoil_design": "models/2d/results/generated/latest.json",
+    "tip_airfoil_design": "same_as_root",
+    "chord_points": 81,
+    "span_stations": 41
+  },
+  "dimensions": {
+    "span_m": 1.8,
+    "reference_planform_area_m2": 0.40499999999999997,
+    "reference_aspect_ratio": 8.000000000000002,
+    "taper_ratio": 0.5,
+    "reference_mean_aerodynamic_chord_m": 0.2333333333333333,
+    "area_definition": "Untwisted trapezoidal reference planform; not actual curved skin surface area"
+  },
+  "mesh_checks": {
+    "vertices": 6560,
+    "triangles": 13116,
+    "closed_manifold": true,
+    "consistent_orientation": true,
+    "degenerate_faces": 0,
+    "signed_volume_m3": 0.006344753517948518,
+    "finite_vertices": true,
+    "minimum_xyz_m": [
+      1.3877787807814457e-17,
+      -0.9,
+      -0.006282684023102877
+    ],
+    "maximum_xyz_m": [
+      0.3086257506772667,
+      0.9,
+      0.09368543768947257
+    ]
+  },
+  "root_section": {
+    "design_file": "C:\\BTP\\models\\2d\\results\\generated\\latest.json",
+    "sha256": "09990cb945ade51490ec8cf8dbccd6af286463656e59764fa595229c6067146a",
+    "coefficients": {
+      "CST Coeff 1": -0.07894433819784295,
+      "CST Coeff 2": -0.044284820266684684,
+      "CST Coeff 3": -0.023000808168639638,
+      "CST Coeff 4": 0.23216228983898823,
+      "CST Coeff 5": 0.21649167520370358,
+      "CST Coeff 6": 0.26158989184213366,
+      "CST Coeff 7": 0.25321346911719145,
+      "CST Coeff 8": 0.2513474437940959
+    },
+    "original_section_conditions": {
+      "description": "Conditions entered in the local airfoil design app.",
+      "angle_of_attack_deg": 0.0,
+      "target_cl": 0.6,
+      "cl_tolerance": 5.0,
+      "maximum_cd": 10.0,
+      "minimum_thickness_ratio": 0.08,
+      "maximum_thickness_ratio": 0.18,
+      "reynolds_number": 100000,
+      "candidate_count": 8000,
+      "random_seed": 42
+    },
+    "original_section_predictions": {
+      "Cl": 0.6019803881645203,
+      "Cd": 0.017587071284651756
+    },
+    "meaning": "Original 2D design estimates only; these are not whole-wing or spanwise predictions"
+  },
+  "tip_section": {
+    "design_file": "C:\\BTP\\models\\2d\\results\\generated\\latest.json",
+    "sha256": "09990cb945ade51490ec8cf8dbccd6af286463656e59764fa595229c6067146a",
+    "coefficients": {
+      "CST Coeff 1": -0.07894433819784295,
+      "CST Coeff 2": -0.044284820266684684,
+      "CST Coeff 3": -0.023000808168639638,
+      "CST Coeff 4": 0.23216228983898823,
+      "CST Coeff 5": 0.21649167520370358,
+      "CST Coeff 6": 0.26158989184213366,
+      "CST Coeff 7": 0.25321346911719145,
+      "CST Coeff 8": 0.2513474437940959
+    },
+    "original_section_conditions": {
+      "description": "Conditions entered in the local airfoil design app.",
+      "angle_of_attack_deg": 0.0,
+      "target_cl": 0.6,
+      "cl_tolerance": 5.0,
+      "maximum_cd": 10.0,
+      "minimum_thickness_ratio": 0.08,
+      "maximum_thickness_ratio": 0.18,
+      "reynolds_number": 100000,
+      "candidate_count": 8000,
+      "random_seed": 42
+    },
+    "original_section_predictions": {
+      "Cl": 0.6019803881645203,
+      "Cd": 0.017587071284651756
+    },
+    "meaning": "Original 2D design estimates only; these are not whole-wing or spanwise predictions"
+  },
+  "output_folder": "C:\\BTP\\results\\3d\\20261008T081258683798Z",
+  "export_units": {
+    "wing_mm.stl": "millimetres; STL does not encode units",
+    "wing_m.obj": "metres by convention",
+    "wing_mesh.npz": "metres"
+  },
+  "physical_requirements_verified": false,
+  "complete_wing_aerodynamic_predictions": null,
+  "limitations": [
+    "No matched 3D aerodynamic or structural training labels",
+    "2D source predictions do not account for span, sweep, twist, dihedral or varying local Reynolds number",
+    "Closed envelope mesh only; no spars, ribs, shell thickness or material definition",
+    "Mesh topology checked, not certified manufacturing or flight feasibility",
+    "Generated source-normalized leading-edge endpoints use y=0",
+    "Existing 2D label conflicts and weak drag prediction remain unresolved"
+  ]
+}

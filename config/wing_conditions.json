@@ -1,0 +1,14 @@
+{
+  "description": "Wing geometry conditions entered in the local 3D generator.",
+  "span_m": 1.8,
+  "root_chord_m": 0.3,
+  "tip_chord_m": 0.15,
+  "leading_edge_sweep_deg": 10.0,
+  "dihedral_deg": 5.0,
+  "root_twist_deg": 0.0,
+  "tip_twist_deg": 6.0,
+  "root_airfoil_design": "models/2d/results/generated/latest.json",
+  "tip_airfoil_design": "same_as_root",
+  "chord_points": 81,
+  "span_stations": 41
+}

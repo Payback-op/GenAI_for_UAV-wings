@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "Filename disjointness",
+    "Exact/near-coefficient disjointness",
+    "Saved artifact reproduces test predictions",
+    "CLI inference matches saved artifact",
+    "Unsupported Reynolds number rejected"
+  ]
+}

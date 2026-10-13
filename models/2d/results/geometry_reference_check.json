@@ -1,0 +1,280 @@
+{
+  "passed": true,
+  "checked_reference_airfoils": 30,
+  "tolerance": 1e-05,
+  "convention": "lower four then upper four; cubic Bernstein; class x^0.5*(1-x); zero trailing-edge thickness",
+  "endpoint_policy": "Generated normalized shapes close at y=0. Source anchors x=0 to A(ind,2), not encoded in CSV; endpoint offsets are reported separately, not treated as reconstruction agreement.",
+  "scope": "Processed source reconstruction only, not aerodynamic or original-shape fitting validation",
+  "references": [
+    {
+      "reference": "12 JOUKOWSKI AIRFOIL joukowskil.dat",
+      "points": 600,
+      "maximum_surface_error": 1.686063656747283e-09,
+      "maximum_interior_error": 1.686063656747283e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 6.635689879660199e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "BOEINGVERTOL VR15 AIRFOIL.dat",
+      "points": 600,
+      "maximum_surface_error": 9.701665651395963e-10,
+      "maximum_interior_error": 9.701665651395963e-10,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 3.636503327330935e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "EPPLER 335 AIRFOIL.dat",
+      "points": 600,
+      "maximum_surface_error": 0.00024,
+      "maximum_interior_error": 1.507551814286523e-09,
+      "source_endpoint_offset": 0.00024,
+      "rms_surface_error": 1.385640647037289e-05,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "FX 63158 AIRFOIL.dat",
+      "points": 600,
+      "maximum_surface_error": 5.953524520596609e-09,
+      "maximum_interior_error": 5.953524520596609e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 1.3510947559472448e-09,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "GOE 167 V.KARMAN PROP2 AIRFOIL.dat",
+      "points": 600,
+      "maximum_surface_error": 1.7736427604386762e-09,
+      "maximum_interior_error": 1.7736427604386762e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 4.273304441344018e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "GOE 381 AIRFOIL.dat",
+      "points": 600,
+      "maximum_surface_error": 2.2514181907684616e-09,
+      "maximum_interior_error": 2.2514181907684616e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 5.910644695022947e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "GOE 505 AIRFOIL.dat",
+      "points": 600,
+      "maximum_surface_error": 5.466403329990044e-09,
+      "maximum_interior_error": 5.466403329990044e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 1.5250747677832508e-09,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "GOE 683 AIRFOIL.dat",
+      "points": 600,
+      "maximum_surface_error": 6.15114660595939e-09,
+      "maximum_interior_error": 6.15114660595939e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 1.486571136692721e-09,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "Joukovsky f0 t9 joukowsk0009jf.dat",
+      "points": 600,
+      "maximum_surface_error": 1.3127300080295612e-09,
+      "maximum_interior_error": 1.3127300080295612e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 5.545048963638036e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "MH 95  15pt86.dat",
+      "points": 600,
+      "maximum_surface_error": 0.000611,
+      "maximum_interior_error": 2.3579367069981316e-09,
+      "source_endpoint_offset": 0.000611,
+      "rms_surface_error": 3.527610145192206e-05,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "NACA 642215 naca642215il.dat",
+      "points": 600,
+      "maximum_surface_error": 2.2022194900994663e-09,
+      "maximum_interior_error": 2.2022194900994663e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 7.240941181109907e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "NASA SC20404 AIRFOIL.dat",
+      "points": 600,
+      "maximum_surface_error": 6.492016577097637e-10,
+      "maximum_interior_error": 6.492016577097637e-10,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 2.5981637674026674e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "RAENPL 5212 AIRFOIL.dat",
+      "points": 600,
+      "maximum_surface_error": 1.4875459475316433e-09,
+      "maximum_interior_error": 1.4875459475316433e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 5.100602504702326e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "SA7026.dat",
+      "points": 600,
+      "maximum_surface_error": 1.742058400311386e-09,
+      "maximum_interior_error": 1.742058400311386e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 4.546311995542598e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "WORTMANN FX 62K131 AIRFOIL.dat",
+      "points": 600,
+      "maximum_surface_error": 5.998593399780816e-09,
+      "maximum_interior_error": 5.998593399780816e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 1.2595588594526606e-09,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "as5048.dat",
+      "points": 600,
+      "maximum_surface_error": 0.00239,
+      "maximum_interior_error": 5.0232104725767e-09,
+      "source_endpoint_offset": 0.00239,
+      "rms_surface_error": 0.0001379867143392566,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "e201.dat",
+      "points": 600,
+      "maximum_surface_error": 0.00128,
+      "maximum_interior_error": 2.0497528396834497e-09,
+      "source_endpoint_offset": 0.00128,
+      "rms_surface_error": 7.390083445894698e-05,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "e558.dat",
+      "points": 600,
+      "maximum_surface_error": 0.00435,
+      "maximum_interior_error": 5.5658857661677885e-09,
+      "source_endpoint_offset": 0.00435,
+      "rms_surface_error": 0.00025114736710045844,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "fx61168.dat",
+      "points": 600,
+      "maximum_surface_error": 5.120586163420704e-09,
+      "maximum_interior_error": 5.120586163420704e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 1.198253044805802e-09,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "gm15sm.dat",
+      "points": 600,
+      "maximum_surface_error": 0.00019,
+      "maximum_interior_error": 1.539661838995121e-09,
+      "source_endpoint_offset": 0.00019,
+      "rms_surface_error": 1.096965512584172e-05,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "goe315.dat",
+      "points": 600,
+      "maximum_surface_error": 1.839986690788109e-09,
+      "maximum_interior_error": 1.839986690788109e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 4.271320609576268e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "goe447.dat",
+      "points": 600,
+      "maximum_surface_error": 5.8268228991797955e-09,
+      "maximum_interior_error": 5.8268228991797955e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 1.7057328845184502e-09,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "goe611.dat",
+      "points": 600,
+      "maximum_surface_error": 5.520756615751132e-09,
+      "maximum_interior_error": 5.520756615751132e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 1.4761827771400914e-09,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "hq2512.dat",
+      "points": 600,
+      "maximum_surface_error": 1.576534548741737e-09,
+      "maximum_interior_error": 1.576534548741737e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 5.278500670769037e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "m5.dat",
+      "points": 600,
+      "maximum_surface_error": 1.6849034042976108e-09,
+      "maximum_interior_error": 1.6849034042976108e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 4.6801564829493e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "n6409.dat",
+      "points": 600,
+      "maximum_surface_error": 5.017895168824005e-09,
+      "maximum_interior_error": 5.017895168824005e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 1.1541284030076158e-09,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "naca66209.dat",
+      "points": 600,
+      "maximum_surface_error": 2.08219635283724e-09,
+      "maximum_interior_error": 2.08219635283724e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 6.798722155248008e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "rg1410.dat",
+      "points": 600,
+      "maximum_surface_error": 1.1582005493560033e-09,
+      "maximum_interior_error": 1.1582005493560033e-09,
+      "source_endpoint_offset": 0.0,
+      "rms_surface_error": 4.2247525041985626e-10,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "sd6080.dat",
+      "points": 600,
+      "maximum_surface_error": 0.0026,
+      "maximum_interior_error": 1.8295418027780563e-09,
+      "source_endpoint_offset": 0.0026,
+      "rms_surface_error": 0.00015011106999018124,
+      "nearest_dataset_coefficient_distance": 0.0
+    },
+    {
+      "reference": "zv15_35.dat",
+      "points": 600,
+      "maximum_surface_error": 0.00928,
+      "maximum_interior_error": 1.761069720607189e-09,
+      "source_endpoint_offset": 0.00928,
+      "rms_surface_error": 0.0005357810498083216,
+      "nearest_dataset_coefficient_distance": 0.0
+    }
+  ]
+}
